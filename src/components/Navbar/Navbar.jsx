@@ -1,23 +1,69 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
-        <a href="/profile">Profile</a>
+        <NavLink
+          to="/Profile"
+          className={({ isActive }) => {
+            const linkClasses = [s.registerButton];
+            if (isActive) linkClasses.push(s.active);
+            return linkClasses.join(" ");
+          }}
+        >
+          Profile
+        </NavLink>
       </div>
       <div className={s.item}>
-        <a href="/dialogs">Messages</a>
+        <NavLink
+          to="/dialogs"
+          className={({ isActive }) => {
+            const linkClasses = [s.registerButton];
+            if (isActive) linkClasses.push(s.active);
+            return linkClasses.join(" ");
+          }}
+        >
+          Dialogs
+        </NavLink>
       </div>
       <div className={s.item}>
-        <a href="/news">News</a>
+        <NavLink
+          to="/News"
+          className={({ isActive }) => {
+            const linkClasses = [s.registerButton];
+            if (isActive) linkClasses.push(s.active);
+            return linkClasses.join(" ");
+          }}
+        >
+          News
+        </NavLink>
       </div>
       <div className={s.item}>
-        <a href="/music">Music</a>
+        <NavLink
+          to="/Music"
+          className={({ isActive }) => {
+            const linkClasses = [s.registerButton];
+            if (isActive) linkClasses.push(s.active);
+            return linkClasses.join(" ");
+          }}
+        >
+          Music
+        </NavLink>
       </div>
       <div className={s.item}>
-        <a href="/settings">Settings</a>
+        <NavLink
+          to="/Settings"
+          className={({ isActive }) => {
+            const linkClasses = [s.registerButton];
+            if (isActive) linkClasses.push(s.active);
+            return linkClasses.join(" ");
+          }}
+        >
+          Settings
+        </NavLink>
       </div>
     </nav>
   );
