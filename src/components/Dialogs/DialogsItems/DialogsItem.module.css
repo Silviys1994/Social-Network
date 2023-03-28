@@ -1,0 +1,7 @@
+.dialogsBar {
+  display: flex;
+}
+
+.dialog .active {
+  color: gold;
+}

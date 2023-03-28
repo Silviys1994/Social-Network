@@ -11,3 +11,20 @@
 .item a.active {
   color: gold;
 }
+
+.friends {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.friends p {
+  margin: 0 auto;
+}
+.friends img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 5px;
+}
