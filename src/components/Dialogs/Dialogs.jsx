@@ -2,7 +2,7 @@ import React from "react";
 import {
   sendMessageCreator,
   updateNewMessageBodyCreator,
-} from "../../redux/state";
+} from "../../redux/dialogs-reduser";
 import s from "./Dialogs.module.css";
 import DialogsItem from "./DialogsItems/DialogsItem";
 import Message from "./Message/Message";
